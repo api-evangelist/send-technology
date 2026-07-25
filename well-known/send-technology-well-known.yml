@@ -1,0 +1,86 @@
+generated: '2026-07-25'
+method: searched
+source: live probes of every resolvable send.technology host, 2026-07-25
+note: >-
+  Send Technology publishes no first-party API host. The only send.technology
+  host that serves any /.well-known/ document is trustcenter.send.technology,
+  the company's SafeBase-hosted Trust Center. The three documents captured there
+  are REAL and served from a Send-branded host, but they describe SafeBase's own
+  MCP authorization server (issuer https://app.safebase.io/api/mcp) — they are
+  vendor-operated, not a Send API authorization server. Recorded honestly rather
+  than claimed as Send's own OAuth surface.
+hosts:
+- host: https://send.technology
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+  - path: /sitemap.xml
+    status: 200
+- host: https://www.send.technology
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://trustcenter.send.technology
+  vendor: SafeBase
+  documents:
+  - path: /.well-known/oauth-authorization-server
+    spec: RFC 8414
+    status: 200
+    file: send-technology-oauth-authorization-server.json
+    note: SafeBase MCP authorization server metadata, served on the Send trust-center host
+  - path: /.well-known/oauth-protected-resource
+    spec: RFC 9728
+    status: 200
+    file: send-technology-oauth-protected-resource.json
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: send-technology-openid-configuration.json
+    note: Identical payload to the RFC 8414 document
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /llms.txt
+    status: 404
+nxdomain_hosts:
+- api.send.technology
+- developer.send.technology
+- developers.send.technology
+- docs.send.technology
+- app.send.technology
+- portal.send.technology
+- secure.send.technology
+- connect.send.technology
+- sandbox.send.technology
+- status.send.technology
+- trust.send.technology
+- security.send.technology
+- mcp.send.technology
+- auth.send.technology
+- login.send.technology
+- id.send.technology
+- platform.send.technology
+- help.send.technology
+- support.send.technology

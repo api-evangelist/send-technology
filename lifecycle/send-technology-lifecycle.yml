@@ -1,0 +1,51 @@
+generated: '2026-07-25'
+method: searched
+source: >-
+  https://send.technology/ (full 43-page sitemap), https://trustcenter.send.technology/,
+  https://send.technology/resources/blog/category/product-announcements/
+note: >-
+  Send Technology publishes no public API, so there is no public API lifecycle
+  contract: no versioning policy, no deprecation policy, no Sunset/Deprecation
+  header commitment, no public SLA and no status page. Absence here is the
+  finding, recorded from live probes rather than assumed. Product lifecycle IS
+  communicated, but only through the dated Product Announcements blog stream and
+  a customer-only Product Briefing & Roadmap event.
+versioning:
+  scheme: not published
+  current: not published
+  docs: null
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No deprecation policy, no RFC 8594 Sunset/Deprecation header commitment, and no
+    end-of-life notices published anywhere on send.technology.
+sla:
+  url: null
+  uptime_target: not published
+  note: >-
+    Business Continuity Plan (BCP), Disaster Recovery Plan (DRP) and
+    Failover/High Availability documents are listed in the SafeBase trust center
+    but are gated behind the NDA/request flow; no public uptime commitment.
+status_page:
+  url: null
+  probed:
+  - url: https://status.send.technology
+    status: NXDOMAIN
+  - url: https://send.technology/status
+    status: 404
+  vendors_checked:
+  - statuspage.io
+  - status.io
+  - instatus
+release_notes:
+  url: https://send.technology/resources/blog/category/product-announcements/
+  cadence: semi-annual product highlights
+  artifact: changelog/send-technology-changelog.yml
+roadmap:
+  public: false
+  note: >-
+    Send runs an annual "Product Briefing & Roadmap Update" (in-person London
+    plus virtual) but the roadmap itself is shared with customers at the event,
+    not published. Non-customers are directed to the contact form.
+  reference: https://send.technology/resources/blog/sends-2025-product-briefing-roadmap-update/
+deprecated_operations: []

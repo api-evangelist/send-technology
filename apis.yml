@@ -45,6 +45,8 @@ modified: '2026-07-25'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/send-technology-domain-security.yml
 - type: Website
   url: https://send.technology/
 - type: About
@@ -61,8 +63,49 @@ common:
   url: https://www.linkedin.com/company/send-technology-solutions
 - type: PrivacyPolicy
   url: https://send.technology/privacy-policy/
+- type: CookiePolicy
+  url: https://send.technology/cookies/
 - type: Contact
   url: https://send.technology/contact/
+- type: YouTube
+  url: https://www.youtube.com/@send-technology
+- type: Careers
+  url: https://send.technology/careers/
+- type: CaseStudies
+  url: https://send.technology/resources/customer-stories/
+- type: Press
+  url: https://send.technology/media/
+- type: Events
+  url: https://send.technology/resources/events/
+- type: Webinars
+  url: https://send.technology/resources/webinars/
+- type: TrustCenter
+  name: Send Trust Center (SafeBase)
+  url: https://trustcenter.send.technology/
+- type: Compliance
+  name: ISO/IEC 27001:2022, SOC 2 Type 2, ISO/IEC 42001:2023
+  url: https://trustcenter.send.technology/
+- type: Security
+  name: Responsible Disclosure (trust center, gated)
+  url: https://trustcenter.send.technology/?itemUid=64c9680b-ef79-4c92-baa0-13b541954bef
+- type: VulnerabilityDisclosure
+  url: security/send-technology-vulnerability-disclosure.yml
+- type: TrustCenter
+  name: Trust center profile (artifact)
+  url: security/send-technology-trust-center.yml
+- type: Conformance
+  url: conformance/send-technology-conformance.yml
+- type: ChangeLog
+  name: Product Announcements
+  url: changelog/send-technology-changelog.yml
+- type: Lifecycle
+  url: lifecycle/send-technology-lifecycle.yml
+- type: WellKnown
+  url: well-known/send-technology-well-known.yml
+- type: Integrations
+  url: integrations/_index.yml
+- type: LLMsTxt
+  url: llms/send-technology-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

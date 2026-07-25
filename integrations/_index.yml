@@ -1,0 +1,201 @@
+generated: '2026-07-25'
+method: searched
+source: >-
+  https://send.technology/partners/, https://send.technology/platform/,
+  https://send.technology/solutions/london-market/,
+  https://send.technology/resources/blog/send-connect-the-key-to-seamless-underwriting-integration/,
+  https://send.technology/resources/blog/send-announces-strategic-partnership-with-acord-solutions-group/
+note: >-
+  Every entry below is LISTING-ONLY. Send Technology publishes no OpenAPI, so no
+  operationId on the Send side can be verified and no forkable Arazzo workflow
+  can be authored without fabricating operations. These are the real, named
+  pre-built connectors Send advertises — captured as a partner catalog with
+  arazzo: null and status: pending-partner-spec, per the pipeline's
+  no-fabrication rule. Integration configuration happens inside Send Connect,
+  Send's low-code integration middleware, during a customer implementation.
+integration_platform:
+  name: Send Connect
+  description: >-
+    Send's insurance integration middleware, described as sitting "at the heart of
+    Send Underwriting Workbench". A lightweight micro-service architecture with a
+    fully automated deployment mechanism that supports code-free/low-code
+    integration routes, pre-built connectors to policy admin, rating and external
+    systems, and a real-time view of API and integrated systems with alerting and
+    proactive management. Data encrypted in transit and at rest.
+  reference: https://send.technology/resources/blog/send-connect-the-key-to-seamless-underwriting-integration/
+  public_documentation: none
+integrations:
+- slug: acord-solutions-group
+  label: ACORD Solutions Group (ADEPT)
+  partner: ACORD Solutions Group
+  category: standards-messaging
+  use_case: >-
+    Send and receive ACORD Standard placing, accounting and claims transactions
+    over ADEPT (ACORD Data Exchange Platform and Translator) via API; ACORD Forms
+    ingestion for rapid submission classification and triage. Aligned with
+    Lloyd's Blueprint Two.
+  arazzo: null
+  status: pending-partner-spec
+- slug: ppl
+  label: PPL (Placing Platform Limited)
+  partner: PPL
+  category: placing-platform
+  use_case: Pre-built connector to the London Market electronic placing platform
+  arazzo: null
+  status: pending-partner-spec
+- slug: whitespace
+  label: Whitespace
+  partner: Whitespace Software
+  category: placing-platform
+  use_case: Pre-built connector to the London Market electronic placing platform
+  arazzo: null
+  status: pending-partner-spec
+- slug: hyperexponential
+  label: hyperexponential
+  partner: hyperexponential
+  category: rating-pricing
+  use_case: >-
+    Integrated pricing — underwriters connect to their hx pricing platform from
+    inside the Underwriting Workbench and pull quote options back into the risk
+    (announced 11 June 2024)
+  arazzo: null
+  status: pending-partner-spec
+- slug: guidewire
+  label: Guidewire
+  partner: Guidewire Software
+  category: policy-administration
+  use_case: Policy admin system connector
+  arazzo: null
+  status: pending-partner-spec
+- slug: salesforce
+  label: Salesforce
+  partner: Salesforce
+  category: crm
+  use_case: CRM connector
+  arazzo: null
+  status: pending-partner-spec
+- slug: dun-and-bradstreet
+  label: Dun & Bradstreet
+  partner: Dun & Bradstreet
+  category: data-enrichment
+  use_case: Company/entity data enrichment for submissions and risk assessment
+  arazzo: null
+  status: pending-partner-spec
+- slug: companies-house
+  label: Companies House
+  partner: UK Companies House
+  category: data-enrichment
+  use_case: UK company registry lookup for entity management
+  arazzo: null
+  status: pending-partner-spec
+- slug: s-and-p
+  label: S&P (Capital IQ)
+  partner: S&P Global
+  category: data-enrichment
+  use_case: Financial and company data for risk assessment
+  arazzo: null
+  status: pending-partner-spec
+- slug: refinitiv
+  label: Refinitiv (World-Check)
+  partner: LSEG / Refinitiv
+  category: sanctions-screening
+  use_case: Sanctions and compliance screening
+  arazzo: null
+  status: pending-partner-spec
+- slug: dow-jones
+  label: Dow Jones
+  partner: Dow Jones
+  category: sanctions-screening
+  use_case: Risk and compliance / adverse media screening
+  arazzo: null
+  status: pending-partner-spec
+- slug: addresscloud
+  label: AddressCloud
+  partner: AddressCloud
+  category: geospatial
+  use_case: Address matching and property-level geocoding for property risk
+  arazzo: null
+  status: pending-partner-spec
+- slug: hazardhub
+  label: HazardHub
+  partner: HazardHub (Guidewire)
+  category: geospatial-peril
+  use_case: Property peril and hazard data for risk assessment
+  arazzo: null
+  status: pending-partner-spec
+- slug: google-maps
+  label: Google Maps
+  partner: Google
+  category: geospatial
+  use_case: Mapping and geocoding
+  arazzo: null
+  status: pending-partner-spec
+- slug: microsoft-bing
+  label: Microsoft Bing
+  partner: Microsoft
+  category: geospatial
+  use_case: Mapping and geocoding
+  arazzo: null
+  status: pending-partner-spec
+- slug: snowflake
+  label: Snowflake
+  partner: Snowflake
+  category: data-warehouse
+  use_case: >-
+    Data and reporting — "connections to Snowflake through APIs" for portfolio
+    analytics (announced in the Q1/Q2 2023 product highlights)
+  arazzo: null
+  status: pending-partner-spec
+- slug: hevo
+  label: Hevo Data
+  partner: Hevo
+  category: data-pipeline
+  use_case: Data pipeline / ELT into customer reporting estates
+  arazzo: null
+  status: pending-partner-spec
+- slug: aws
+  label: Amazon Web Services
+  partner: Amazon Web Services
+  category: cloud-ai
+  use_case: >-
+    Hosting infrastructure (named in the trust center Infrastructure section) and
+    AWS Bedrock models behind the Send Agentic Framework
+  arazzo: null
+  status: pending-partner-spec
+- slug: openai
+  label: OpenAI
+  partner: OpenAI
+  category: ai
+  use_case: >-
+    Advanced document data extraction (partnership announced in the Q1/Q2 2023
+    product highlights) and a model option in the Send Agentic Framework
+  arazzo: null
+  status: pending-partner-spec
+- slug: streamlit
+  label: Streamlit
+  partner: Streamlit (Snowflake)
+  category: analytics-apps
+  use_case: Customer-built analytics apps over Send data
+  arazzo: null
+  status: pending-partner-spec
+- slug: microsoft-excel
+  label: Microsoft Excel
+  partner: Microsoft
+  category: office
+  use_case: Spreadsheet import/export in the underwriting workflow
+  arazzo: null
+  status: pending-partner-spec
+delivery_partners:
+- Vega IT
+- Sollers Consulting
+- Auxo
+- Deloitte
+- Decerto
+memberships:
+- ACORD
+- InsTech
+- MGAA
+- International Underwriting Association (IUA)
+- Wholesale & Specialty Insurance Association (WSIA)
+- Target Markets
+- InsurTech100

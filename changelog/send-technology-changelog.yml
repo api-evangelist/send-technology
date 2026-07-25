@@ -1,0 +1,93 @@
+generated: '2026-07-25'
+method: searched
+source: https://send.technology/resources/blog/category/product-announcements/
+scheme: semi-annual product-highlights posts (no semantic version, no API version)
+current_version: not published
+note: >-
+  Send publishes no API changelog and no versioned release notes. What it does
+  publish is a dated "Product Announcements" blog category carrying a
+  semi-annual (Q1&Q2 / Q3&Q4) Underwriting Workbench product-highlights post,
+  plus one-off product and integration announcements. That stream is the closest
+  thing to a public change log and is the source captured below. Entries are
+  narrative product summaries, not per-endpoint changes; no breaking-change
+  notices, no deprecation notices and no API version numbers appear anywhere in
+  the stream.
+cadence: semi-annual (plus ad-hoc product/integration announcements)
+breaking_change_notices: none published
+entries:
+- date: '2025-07-28'
+  title: 'Q1 & Q2 2025 Product Highlights: Building your competitive edge from the ground up'
+  url: https://send.technology/resources/blog/q1-q2-2025-product-highlights-building-your-competitive-edge-from-the-ground-up/
+  type: product-highlights
+  breaking: false
+  highlights:
+  - Redesigned configurable dashboards with quick filters and ad-hoc filtering
+  - Risk "peek" detail view without leaving the dashboard
+  - Improved submission management for unstructured email submissions
+  - AI-driven submission processing
+  - Faster document generation
+  - Underwriter rationale capture
+- date: '2025-02-05'
+  title: Send's 2025 Product Briefing & Roadmap Update
+  url: https://send.technology/resources/blog/sends-2025-product-briefing-roadmap-update/
+  type: roadmap-briefing
+  breaking: false
+  highlights:
+  - Q1 Product Briefing and Roadmap Update announced (in-person London plus virtual)
+  - Customer-only forward-looking roadmap; no public roadmap document published
+- date: '2024-12-23'
+  title: 'Send Product Highlights: 2024 Q3 and Q4'
+  url: https://send.technology/resources/blog/send-product-highlights-q3-and-q4-2024/
+  type: product-highlights
+  breaking: false
+  highlights:
+  - Integrated pricing with hyperexponential third-party rating
+  - Send Connect low-code configuration and expanded business rules engine
+  - Smart Submission upgrade with enhanced AI extraction and OCR, Microsoft and Gmail accounts
+  - Workflow refinements across the Underwriting Workbench
+- date: '2024-07-18'
+  title: 'Send Technology Product highlights: Q1 and Q2 2024'
+  url: https://send.technology/resources/blog/underwriting-workbench-product-highlights-first-half-of-2024/
+  type: product-highlights
+  breaking: false
+  highlights:
+  - Smart Submission can link one submission to multiple risks (MTAs, renewals)
+  - Submission insights dashboards with volume, processing time, priority, conversion and SLA metrics
+  - Delegated Underwriting Authority capability expansion
+  - Send Connect configuration improvements
+  - New London Market line of business
+- date: '2024-06-11'
+  title: Send & hyperexponential announce integration to enable seamlessly connected pricing workflow for insurers
+  url: https://send.technology/resources/blog/send-hyperexponential-announce-integration-to-enable-seamlessly-connected-pricing-workflow-for-insurers/
+  type: integration-announcement
+  breaking: false
+- date: '2023-12-21'
+  title: 'Underwriting Workbench Evolution: Q3 & Q4 product highlights'
+  url: https://send.technology/resources/blog/underwriting-workbench-evolution-q3-q4-product-highlights/
+  type: product-highlights
+  breaking: false
+  highlights:
+  - Clause Library with central management across 40+ lines of business
+  - Document Generation with dynamic previews inside the workflow
+  - Surety added as a specialised line of business
+  - Smart Submission enhancements
+- date: '2023-10-27'
+  title: 'Send Connect: The key to seamless underwriting integration'
+  url: https://send.technology/resources/blog/send-connect-the-key-to-seamless-underwriting-integration/
+  type: product-announcement
+  breaking: false
+  highlights:
+  - Send Connect integration middleware launched at the heart of the Underwriting Workbench
+  - Code-free integration routes over a lightweight micro-service architecture
+  - Pre-built data-service connectors and real-time API monitoring with alerting
+- date: '2023-05-30'
+  title: 'Underwriting Workbench Evolution: Q1 & Q2 product highlights'
+  url: https://send.technology/resources/blog/underwriting-workbench-evolution-2023-product-highlights/
+  type: product-highlights
+  breaking: false
+  highlights:
+  - Next-generation document management inside the underwriting process
+  - Rate flow optimisation between risk data and rating
+  - Delegated Underwriting Authority improvements (coverholder setup, binding authority, bordereaux)
+  - OpenAI partnership for advanced data extraction
+  - Snowflake integration for data and reporting, connected through APIs

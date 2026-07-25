@@ -1,0 +1,102 @@
+generated: '2026-07-25'
+method: searched
+probe: false
+source: https://trustcenter.send.technology/
+url: https://trustcenter.send.technology/
+platform: SafeBase
+note: >-
+  Send Technology runs a public SafeBase-hosted Trust Center at
+  trustcenter.send.technology (linked from the send.technology footer). The
+  overview, the certification list, the document catalog and the security
+  control categories are publicly readable; the underlying documents are gated
+  behind an NDA / "Get access" request flow. Named customer references shown on
+  the page: IGI, Insurance Renaissance (RenaissanceRe), Aviva UK, Everest,
+  Bowhead Specialty.
+certifications:
+- name: ISO/IEC 27001:2022
+  category: compliance
+- name: SOC 2 Type 2
+  category: compliance
+- name: ISO/IEC 42001:2023
+  category: compliance
+  note: AI management systems; announced 28 January 2026
+document_access:
+  model: gated
+  detail: >-
+    Documents are listed publicly with Public/Private labels; full and
+    un-redacted versions are provided on request through an Account Executive or
+    CSM, and all documents can be provided upon signing an NDA.
+sections:
+  application_security:
+  - Application Penetration Testing
+  - Responsible Disclosure
+  - Code Analysis
+  - Credential Management
+  legal:
+  - Subprocessors
+  - Cyber Insurance
+  - NDA
+  policies:
+  - Acceptable Use Policy
+  - Access Control Policy
+  - Anti-Virus Policy
+  - Asset Management Policy
+  - Data Classification Policy
+  infrastructure:
+  - Amazon Web Services
+  - Anti-DDoS
+  - BC/DR
+  endpoint_security:
+  - Disk Encryption
+  - DNS Filtering
+  - Endpoint Detection & Response
+  network_security:
+  - Data Loss Prevention
+  - Firewall
+  - IDS/IPS
+  corporate_security:
+  - Asset Management Practices
+  - Email Protection
+  - Employee Handbook
+  business_continuity:
+  - Business Continuity Plan (BCP)
+  - Disaster Recovery Plan (DRP)
+  - Failover/High Availability
+  training:
+  - Employee Privacy Training
+  - Phishing Training
+  - Security Awareness Training
+  physical_and_environmental:
+  - Access Monitoring
+  - Alarms & Surveillance
+  - Alternate Work Sites
+  esg:
+  - Anti-Bribery and Corruption
+  - Anti-Competitive Practices
+  - Anti-Modern Slavery
+product_security:
+  statement: >-
+    "We pay great attention to enterprise features such as access control and
+    single sign on. We are happy to provide more details about our enterprise
+    features upon request."
+  sso: advertised, not publicly documented
+self_assessments:
+  statement: >-
+    "We are working on our security compliance. We can provide completed
+    questionnaires upon request."
+evidence:
+- source: https://trustcenter.send.technology/
+  keywords:
+  - trust center
+  - iso/iec 27001:2022
+  - soc 2 type 2
+  - iso/iec 42001:2023
+  - responsible disclosure
+  - subprocessors
+- source: https://send.technology/platform/
+  keywords:
+  - iso 27001
+  - soc 2 type 2
+- source: https://send.technology/resources/blog/send-achieves-iso-42001-certification-setting-the-standard-for-controlled-agentic-ai-in-underwriting/
+  keywords:
+  - iso 42001

@@ -1,0 +1,90 @@
+# Send Technology
+
+> Send Technology Solutions Ltd is a London-headquartered insurtech (founded 2017) that builds an
+> underwriting workbench for commercial and specialty insurers, MGAs and reinsurers. Its centre of
+> gravity is the London Market — Lloyd's managing agents, syndicates and MGAs — where it ships
+> pre-built connectors to the electronic placing platforms PPL and Whitespace and aligns with Lloyd's
+> Blueprint Two. Send markets itself as an API-first platform and exchanges ACORD Standard placing,
+> accounting and claims transactions through ACORD Solutions Group's ADEPT platform via API. Despite
+> that posture, Send publishes NO public developer portal, NO API reference and NO machine-readable
+> API definition of any kind. Its integration surface is partner- and customer-gated, configured
+> through Send Connect during an implementation.
+
+## Important for agents
+
+- There is **no public Send Technology API**. No OpenAPI, Swagger, AsyncAPI, GraphQL SDL, .proto or
+  MCP server is published anywhere on send.technology. Do not attempt to construct requests.
+- `developer.`, `developers.`, `docs.`, `api.`, `app.`, `sandbox.` and `status.send.technology` do
+  not resolve in DNS. `/developers`, `/developer`, `/api` and `/integrations` all return 404.
+- No SDKs, client libraries, CLI or Postman collection exist on npm, PyPI, Maven Central, NuGet,
+  pkg.go.dev, RubyGems, Packagist, crates.io or GitHub. There is no Send Technology GitHub org.
+- Access to any Send interface is arranged through a commercial engagement (https://send.technology/contact/).
+
+## Company
+
+- [Website](https://send.technology/): Award-winning underwriting platform for commercial and specialty insurers
+- [About](https://send.technology/about/): Company history, founded 2017, $10m Series A in 2022
+- [Platform](https://send.technology/platform/): The ten core capability modules
+- [Partners](https://send.technology/partners/): Technology, data, delivery partners and industry memberships
+- [Careers](https://send.technology/careers/)
+- [Contact](https://send.technology/contact/): hello@send.technology
+
+## Platform capabilities
+
+- Submission Management (Send Flow / Smart Submission)
+- Quote & Rate Lifecycle Management (Send Rating, Send Studio)
+- Risk Workflow
+- Automation & Rules
+- Activity Management
+- Binder Management
+- Bordereaux Ingestion
+- Entity Management
+- Post-Bind Processing
+- Data & Insights
+- [Agentic Framework](https://send.technology/agentic-framework/): managed, partner and custom AI agents over AWS Bedrock, Azure and OpenAI, governed under ISO 42001
+
+## Products and solutions
+
+- [Direct Underwriting](https://send.technology/products/direct-underwriting/)
+- [Delegated Underwriting](https://send.technology/products/delegated-underwriting/)
+- [Reinsurance Underwriting](https://send.technology/products/reinsurance-underwriting/)
+- [London Market](https://send.technology/solutions/london-market/)
+- [Americas](https://send.technology/solutions/americas/)
+- [Insurers](https://send.technology/solutions/insurers/) · [MGAs](https://send.technology/solutions/mgas/) · [Reinsurers](https://send.technology/solutions/reinsurers/)
+
+## Integration surface (gated)
+
+- Send Connect — low-code integration middleware, micro-service architecture, pre-built connectors,
+  real-time API monitoring with alerting. No public documentation.
+  https://send.technology/resources/blog/send-connect-the-key-to-seamless-underwriting-integration/
+- ACORD Solutions Group / ADEPT — ACORD Standard placing, accounting and claims transactions via API.
+  https://send.technology/resources/blog/send-announces-strategic-partnership-with-acord-solutions-group/
+- Named pre-built connectors: PPL, Whitespace, hyperexponential, Guidewire, Salesforce,
+  Dun & Bradstreet, Companies House, S&P Capital IQ, Refinitiv World-Check, Dow Jones, AddressCloud,
+  HazardHub, Google Maps, Microsoft Bing, Snowflake, Hevo, AWS, OpenAI, Streamlit, Microsoft Excel.
+
+## Security and compliance
+
+- [Trust Center](https://trustcenter.send.technology/): SafeBase-hosted; ISO/IEC 27001:2022,
+  SOC 2 Type 2, ISO/IEC 42001:2023. Documents are gated behind an NDA / request flow.
+- Responsible Disclosure document listed under Application Security in the trust center.
+  There is no security.txt and no public bug bounty program.
+- [Privacy Policy](https://send.technology/privacy-policy/) · [Cookies](https://send.technology/cookies/)
+
+## Change log
+
+- [Product Announcements](https://send.technology/resources/blog/category/product-announcements/):
+  semi-annual Underwriting Workbench product-highlights posts. No API changelog, no versioning
+  policy, no deprecation policy, no status page and no public SLA.
+
+## API Evangelist artifacts
+
+- apis.yml: https://raw.githubusercontent.com/api-evangelist/send-technology/refs/heads/main/apis.yml
+- Conformance: conformance/send-technology-conformance.yml
+- Trust center: security/send-technology-trust-center.yml
+- Vulnerability disclosure: security/send-technology-vulnerability-disclosure.yml
+- Domain security: security/send-technology-domain-security.yml
+- Well-known probes: well-known/send-technology-well-known.yml
+- Lifecycle: lifecycle/send-technology-lifecycle.yml
+- Changelog: changelog/send-technology-changelog.yml
+- Integrations (listing-only): integrations/_index.yml

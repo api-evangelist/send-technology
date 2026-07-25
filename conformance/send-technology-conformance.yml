@@ -1,0 +1,92 @@
+generated: '2026-07-25'
+method: searched
+source: >-
+  https://trustcenter.send.technology/, https://send.technology/platform/,
+  https://send.technology/partners/,
+  https://send.technology/resources/blog/send-announces-strategic-partnership-with-acord-solutions-group/
+note: >-
+  Send Technology publishes no OpenAPI, so nothing below is derived from a spec.
+  Every "conforms: true" entry is backed by a published Send claim or a public
+  certification listing on Send's SafeBase Trust Center. Protocol-level
+  conventions (OAuth 2.0, OIDC, RFC 9457, pagination, idempotency) are recorded
+  as "unknown" — Send's integration surface is partner- and customer-gated and
+  none of it is publicly documented, so their presence can be neither confirmed
+  nor denied from outside.
+standards:
+- id: iso-iec-27001-2022
+  conforms: true
+  evidence: >-
+    Certification listed under Compliance on https://trustcenter.send.technology/
+    and stated on https://send.technology/platform/ ("Send also holds ISO 27001
+    and SOC 2 Type 2 certification"); announced in
+    /resources/blog/securing-the-next-milestone-send-achieves-iso-27001-accreditation/
+- id: soc-2-type-2
+  conforms: true
+  evidence: >-
+    Certification listed under Compliance on https://trustcenter.send.technology/;
+    announced in
+    /resources/blog/send-independently-verified-as-a-leader-in-insurtech-security-with-prestigious-soc-2-and-iso-27001-certifications/
+- id: iso-iec-42001-2023
+  conforms: true
+  evidence: >-
+    AI management system certification listed under Compliance on
+    https://trustcenter.send.technology/; announced 28 January 2026 in
+    /resources/blog/send-achieves-iso-42001-certification-setting-the-standard-for-controlled-agentic-ai-in-underwriting/
+    — governs the Send Agentic Framework across the AI lifecycle
+- id: acord-standards
+  conforms: true
+  evidence: >-
+    Send is an ACORD member and exchanges ACORD Standard placing, accounting and
+    claims transactions through ACORD Solutions Group's ADEPT (ACORD Data
+    Exchange Platform and Translator) via API; ACORD Forms are ingested for
+    submission triage. ACORD is listed as both technology partner and industry
+    membership on https://send.technology/partners/.
+  scope: placing, accounting, claims (eMessaging via ADEPT)
+- id: acord-al3
+  conforms: false
+  evidence: >-
+    No AL3 flat-file reference found. Expected — AL3/IVANS/agency-download are US
+    agency-management rails and Send's centre of gravity is the London Market.
+- id: lloyds-blueprint-two
+  conforms: true
+  evidence: >-
+    Send aligns its ACORD/ADEPT eMessaging with Lloyd's Blueprint Two and ships
+    pre-built connectors to the London Market electronic placing platforms PPL
+    and Whitespace (https://send.technology/solutions/london-market/).
+  note: alignment claim, not a certification
+- id: uk-gdpr
+  conforms: true
+  evidence: >-
+    UK-headquartered data controller with a published privacy policy
+    (https://send.technology/privacy-policy/) and a Subprocessors document in the
+    trust center Legal section.
+- id: oauth2
+  conforms: unknown
+  evidence: >-
+    No public API and no Send-operated authorization server. The RFC 8414 document
+    served at https://trustcenter.send.technology/.well-known/oauth-authorization-server
+    belongs to SafeBase (issuer https://app.safebase.io/api/mcp), the trust-center
+    vendor — it is not a Send API authorization server.
+- id: openid-connect
+  conforms: unknown
+  evidence: >-
+    SSO is advertised as an enterprise feature in the trust center's Product
+    Security section but no OIDC discovery document for a Send application exists.
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: no public OpenAPI or error reference
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on every resolvable send.technology host
+- id: rfc8594-sunset-header
+  conforms: unknown
+  evidence: no public deprecation or versioning policy
+- id: asyncapi
+  conforms: false
+  evidence: no public event, streaming or webhook surface
+- id: openapi
+  conforms: false
+  evidence: >-
+    No OpenAPI/Swagger document at any probed location on send.technology,
+    www.send.technology or trustcenter.send.technology; no developer subdomain
+    resolves in DNS.
