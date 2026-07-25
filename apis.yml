@@ -1,0 +1,68 @@
+aid: send-technology
+url: https://raw.githubusercontent.com/api-evangelist/send-technology/refs/heads/main/apis.yml
+name: Send Technology
+kind: company
+description: >-
+  Send Technology Solutions Ltd is a London-headquartered insurtech software
+  company, founded in 2017, that builds an underwriting workbench for commercial
+  and specialty insurers, MGAs and reinsurers. Its platform covers submission
+  management, quote and rate lifecycle management, risk workflow, binder
+  management, bordereaux ingestion, entity management, post-bind processing and
+  portfolio data and insights, with product lines for direct underwriting,
+  delegated underwriting and reinsurance underwriting. Its home market is the
+  United Kingdom and its centre of gravity is the London Market — Lloyd's
+  managing agents, syndicates and MGAs — where it ships pre-built connectors to
+  the electronic placing platforms PPL and Whitespace and aligns with Lloyd's
+  Blueprint Two. Send markets itself as an API-first platform, and it exchanges
+  ACORD Standard placing, accounting and claims transactions through ACORD
+  Solutions Group's ADEPT (ACORD Data Exchange Platform and Translator) via API,
+  having joined ACORD as a member. Despite that posture, Send publishes NO
+  public self-serve developer portal and NO downloadable OpenAPI: developer.,
+  developers., docs. and api.send.technology do not resolve in DNS, and
+  /developers, /api, /developer and /integrations all return 404. The only
+  integration surface is partner- and customer-gated, arranged through sales,
+  implementation partners and the ACORD/placing-platform seam rather than
+  through public documentation — a faithful example of the London Market's
+  broker- and syndicate-facing modernization being invisible from the outside.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Insurance
+- United Kingdom
+- Insurtech
+- Underwriting
+- London Market
+- Lloyd's of London
+- Specialty Insurance
+- Commercial Insurance
+- Reinsurance
+- Delegated Authority
+- MGA
+- Policy Administration
+- ACORD
+- Partner Gated
+created: '2026-07-25'
+modified: '2026-07-25'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://send.technology/
+- type: About
+  url: https://send.technology/about/
+- type: Platform
+  url: https://send.technology/platform/
+- type: Partners
+  url: https://send.technology/partners/
+- type: Blog
+  url: https://send.technology/resources/blog/
+- type: BlogRSS
+  url: https://send.technology/resources/blog/feed/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/send-technology-solutions
+- type: PrivacyPolicy
+  url: https://send.technology/privacy-policy/
+- type: Contact
+  url: https://send.technology/contact/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

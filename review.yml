@@ -1,0 +1,230 @@
+aid: send-technology
+name: Send Technology
+review:
+  question: Does Send Technology expose a public, self-serve developer portal or a downloadable API definition for its underwriting workbench?
+  answer: false
+  date: '2026-07-25'
+  reviewer: API Evangelist
+  homeMarket: United Kingdom
+  sector: Insurance
+  tier: underwriting-ai
+findings:
+  summary: |
+    Send Technology Solutions Ltd (send.technology) is a London-based insurtech
+    that sells an underwriting workbench to commercial and specialty insurers,
+    MGAs and reinsurers, with its deepest footprint in the London Market and at
+    Lloyd's. Send describes itself in marketing copy as "an API-first platform
+    with pre-built connectors for placing platforms like Whitespace and PPL,
+    insurance-focused data integrations, rating engines, document stores, and
+    policy admin systems", but it publishes NO public developer portal, NO API
+    reference, and NO downloadable OpenAPI/Swagger definition. Every first-party
+    developer host probed on 2026-07-25 failed to resolve or 404'd. The full
+    WordPress page sitemap (43 pages) contains no /developers, /docs, /api or
+    /reference page of any kind. The only integration surface is partner- and
+    customer-gated: connectors are configured during implementation, and
+    standards-based exchange runs through ACORD Solutions Group rather than
+    through anything a developer can sign up for. This is the characteristic UK
+    London-Market pattern — real market-wide data plumbing (Blueprint Two, PPL,
+    Whitespace, ACORD ADEPT) aimed at brokers and syndicates, not developers,
+    and therefore invisible from outside.
+  developerPortal:
+    exists: false
+    url: ''
+    classification: none — no developer portal, no login wall, no API marketing page
+    note: The closest public page is https://send.technology/partners/ (HTTP 200), which is a marketing partner/ecosystem directory listing technology, data and implementation partners. It contains no API documentation and no developer sign-up.
+  probes:
+  - url: https://developer.send.technology
+    status: '000'
+    note: DNS does not resolve
+  - url: https://developers.send.technology
+    status: '000'
+    note: DNS does not resolve
+  - url: https://docs.send.technology
+    status: '000'
+    note: DNS does not resolve
+  - url: https://api.send.technology
+    status: '000'
+    note: DNS does not resolve
+  - url: https://send.technology/developers
+    status: '404'
+  - url: https://send.technology/developer
+    status: '404'
+  - url: https://send.technology/api
+    status: '404'
+  - url: https://send.technology/integrations
+    status: '404'
+  - url: https://send.technology/partners
+    status: '200'
+    note: Marketing partner directory, publicly readable, no API docs
+  - url: https://innovate.send.technology
+    status: '200'
+    note: Marketing microsite (Underwriting Maturity Framework for the London Market); no developer content
+  - url: https://send.technology/openapi.json
+    status: '404'
+  - url: https://send.technology/openapi.yaml
+    status: '403'
+    note: WAF/hosting block, not a spec; no OpenAPI content returned
+  - url: https://send.technology/swagger.json
+    status: '404'
+  - url: https://send.technology/api-docs
+    status: '404'
+  - url: https://send.technology/spec
+    status: '404'
+  - url: https://send.technology/redoc
+    status: '404'
+  - url: https://send.technology/v1/openapi.json
+    status: '404'
+  - url: https://send.technology/graphql
+    status: '404'
+  - url: https://send.technology/.well-known/openid-configuration
+    status: '404'
+  - url: https://send.technology/.well-known/oauth-authorization-server
+    status: '404'
+  - url: https://send.technology/llms.txt
+    status: '404'
+  - url: https://send.technology/sitemap.xml
+    status: '200'
+    note: Yoast sitemap index; page-sitemap.xml enumerates 43 pages, none developer- or API-facing
+  specifications:
+    openapiHarvested: false
+    count: 0
+    note: No OpenAPI, Swagger, AsyncAPI, GraphQL SDL, or .proto artifact is published anywhere on send.technology or on any resolvable Send subdomain. Nothing was saved because nothing real was found. The openapi/ directory is intentionally absent.
+  acordPosture:
+    summary: ACORD member; ACORD Standard placing/accounting/claims transactions exchanged via ACORD Solutions Group's ADEPT API; ACORD Forms ingestion for submission triage
+    detail: |
+      Send announced a strategic partnership with ACORD Solutions Group (ASG),
+      the digital solutions subsidiary of ACORD. Per Send's own announcement,
+      Send uses ADEPT (ACORD Data Exchange Platform and Translator) via API,
+      which "allows Send's customers to seamlessly send and receive ACORD
+      Standard accounting, claims, and placing transactions", providing
+      eMessaging capabilities for placing, accounting and claims data exchange
+      aligned with Lloyd's Blueprint Two. Send also became an ACORD member,
+      noting that "Many of Send's customers use ACORD Data Standards and ACORD
+      Forms", which Send ingests to "facilitate rapid ingestion of forms to help
+      insurers quickly classify and triage new submissions". ACORD is also
+      listed as a technology partner and industry membership on
+      https://send.technology/partners/. No AL3 flat-file reference and no
+      IVANS / agency-download / Applied Epic / Vertafore AMS360 reference was
+      found — expected, since those are US agency-management rails and Send's
+      centre of gravity is the London Market.
+    acordCertified: not claimed
+    al3: no reference found
+    ivans: no reference found
+  insuranceVerbs:
+    quote: covered by the product (Quote & Rate Lifecycle Management, Send Rating, Send Studio) but NOT exposed as a public API
+    bind: covered by the product (submission-to-bind, Binder Management, Post-Bind Processing) but NOT exposed as a public API
+    issue: covered by the product (post-bind processing, endorsements, renewals) but NOT exposed as a public API
+    fnol: not a Send product area; claims appear only as ACORD claims transactions carried over ADEPT, not as a Send-published API
+    audience: partner-only — underwriters, managing agents, MGAs and reinsurers as licensed customers; no consumer-facing or self-serve agent-facing API
+  authModel:
+    scheme: not publicly documented
+    note: No OAuth 2.0, OpenID Connect, API key or mTLS scheme is documented publicly. /.well-known/openid-configuration and /.well-known/oauth-authorization-server both return 404 on the apex host, and no application/tenant host (app., portal., secure., connect., sandbox.) resolves in DNS. Access to any Send API is arranged through a commercial engagement.
+  webhooks:
+    exists: unknown/undocumented
+    note: No public event catalog, webhook reference or AsyncAPI document exists. Absence is the finding.
+  postman:
+    exists: false
+    note: No public Postman workspace or collection found for Send Technology in a Postman public search.
+  graphql:
+    exists: false
+    note: https://send.technology/graphql returns 404; no GraphQL surface advertised.
+  grpc:
+    exists: false
+    note: No published .proto files found.
+  sourceCode:
+    githubOrganization: none
+    note: No github.com/send-technology organization exists (GitHub API returns 404); no public SDKs or client libraries found.
+  platformModules:
+  - Submission Management (Send Flow)
+  - Quote & Rate Lifecycle Management (Send Rating, Send Studio)
+  - Risk Workflow
+  - Automation & Rules
+  - Activity Management
+  - Binder Management
+  - Bordereaux Ingestion
+  - Entity Management
+  - Post-Bind Processing
+  - Data & Insights
+  - Agentic Framework (managed, partner and custom agents over AWS Bedrock, Azure, OpenAI)
+  namedIntegrations:
+    placingPlatforms:
+    - PPL
+    - Whitespace
+    dataAndTech:
+    - AddressCloud
+    - HazardHub
+    - Dun & Bradstreet
+    - Dow Jones
+    - Companies House
+    - Refinitiv
+    - S&P
+    - Google Maps
+    - Microsoft Bing
+    - Guidewire
+    - Salesforce
+    - ServiceNow
+    - Snowflake
+    - AWS
+    - OpenAI
+    - Hevo
+    note: Named on https://send.technology/partners/ and https://send.technology/platform/ as pre-built connectors. None of these integrations is documented publicly at the endpoint level.
+  certifications:
+  - ISO 27001
+  - SOC 2 Type II
+  - ISO 42001
+  transports:
+  - protocol: REST
+    scheme: https
+    documented: false
+    note: Send claims an API-first architecture with pre-built connectors, but no base URL, endpoint, or reference documentation is published publicly.
+  - protocol: ACORD messaging (ADEPT)
+    scheme: https
+    documented: false
+    note: ACORD Standard placing, accounting and claims transactions exchanged through ACORD Solutions Group's ADEPT platform via API. Documentation and access belong to ACORD Solutions Group, not to Send, and are not public.
+  - protocol: GraphQL
+    documented: false
+  - protocol: gRPC
+    documented: false
+  - protocol: WebSocket
+    documented: false
+  - protocol: AsyncAPI / Webhooks
+    documented: false
+sources:
+- url: https://send.technology/
+  type: Website
+  status: '200'
+  note: Corporate homepage — "Award-Winning Underwriting Platform for Commercial & Specialty Insurers".
+- url: https://send.technology/platform/
+  type: Documentation
+  status: '200'
+  note: 'Lists the ten platform modules and states: "Send is an API-first platform with pre-built connectors for placing platforms like Whitespace and PPL, insurance-focused data integrations, rating engines, document stores, and policy admin systems." No link to API documentation.'
+- url: https://send.technology/partners/
+  type: Partners
+  status: '200'
+  note: Publicly readable marketing partner/ecosystem directory; ACORD listed as both technology partner and industry membership; ISO 27001 / SOC 2 Type II / ISO 42001 noted. No developer portal, no API docs, no login wall.
+- url: https://send.technology/resources/blog/send-announces-strategic-partnership-with-acord-solutions-group/
+  type: Blog
+  status: '200'
+  note: Primary source for the ACORD posture — ADEPT via API, ACORD Standard accounting/claims/placing transactions, ACORD membership, ACORD Forms ingestion, Blueprint Two alignment.
+- url: https://send.technology/agentic-framework/
+  type: Documentation
+  status: '200'
+  note: Describes managed, partner and custom agents over AWS Bedrock, Azure and OpenAI with ISO 42001 governance. No API documentation, SDKs, or endpoint specifications.
+- url: https://send.technology/solutions/london-market/
+  type: Documentation
+  status: '200'
+  note: London Market positioning — open-market and delegated underwriters, risk codes, stamps, subscriptions, multi-section programmes.
+- url: https://send.technology/sitemap.xml
+  type: Sitemap
+  status: '200'
+  note: Yoast sitemap index; page-sitemap.xml enumerates all 43 public pages, none of which is developer- or API-facing.
+actions:
+  apisYmlUpdated: true
+  openapiDirectoryCreated: false
+  reason: |
+    No public self-serve developer surface and no machine-readable API artifact
+    of any kind exists for Send Technology, so apis[] is intentionally empty and
+    no openapi/ directory was created. Recording the honest absence — an
+    API-first product whose APIs are reachable only through a commercial
+    engagement and the ACORD/placing-platform seam — is the correct outcome for
+    this record.
