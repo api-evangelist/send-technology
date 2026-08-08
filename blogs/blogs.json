@@ -2,6 +2,20 @@
   "repo": "send-technology",
   "feeds": [
     {
+      "source": "https://send.technology/partners/feed/",
+      "feed_url": "https://send.technology/partners/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://send.technology/resources/blog/feed/",
+      "feed_url": "https://send.technology/resources/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://send.technology/partners/",
       "feed_url": "https://send.technology/partners/feed/",
       "title": "",
@@ -17,5 +31,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-08-01T15:49:00Z"
+  "fetched": "2026-08-06T14:08:46Z"
 }
