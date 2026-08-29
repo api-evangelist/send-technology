@@ -24,6 +24,17 @@ description: >-
   implementation partners and the ACORD/placing-platform seam rather than
   through public documentation — a faithful example of the London Market's
   broker- and syndicate-facing modernization being invisible from the outside.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Insurance
