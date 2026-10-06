@@ -64,10 +64,12 @@ tags:
 - ACORD
 - Partner Gated
 created: '2026-07-25'
-modified: '2026-07-25'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+- url: https://send.technology/feed
+  type: BlogRSS
 - type: DomainSecurity
   url: security/send-technology-domain-security.yml
 - type: Website
