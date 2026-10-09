@@ -41,6 +41,9 @@ accessModel:
   trial: false
   try_now: false
   public: false
+  gated: partner
+  gated_source:
+  - tag:Partner Gated
   label: Unknown
   confidence: low
   source:
@@ -62,7 +65,6 @@ tags:
 - MGA
 - Policy Administration
 - ACORD
-- Partner Gated
 created: '2026-07-25'
 modified: '2026-10-06'
 specificationVersion: '0.23'
@@ -134,3 +136,5 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-tags-removed:
+- Partner Gated
