@@ -1,4 +1,4 @@
-# Send Technology (send-technology)
+# Send Technology
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,91 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Send Technology Solutions Ltd is a London-headquartered insurtech software company, founded in 2017, that builds an underwriting workbench for commercial and specialty insurers, MGAs and reinsurers. Its platform covers submission management, quote and rate lifecycle management, risk workflow, binder management, bordereaux ingestion, entity management, post-bind processing and portfolio data and insights, with product lines for direct underwriting, delegated underwriting and reinsurance underwriting. Its home market is the United Kingdom and its centre of gravity is the London Market — Lloyd's managing agents, syndicates and MGAs — where it ships pre-built connectors to the electronic placing platforms PPL and Whitespace and aligns with Lloyd's Blueprint Two.
+Send Technology Solutions Ltd is a London-headquartered insurtech software company, founded in 2017, that builds an underwriting workbench for commercial and specialty insurers, MGAs and reinsurers. Its platform covers submission management, quote and rate lifecycle management, risk workflow, binder management, bordereaux ingestion, entity management, post-bind processing and portfolio data and insights, with product lines for direct underwriting, delegated underwriting and reinsurance underwriting. Its home market is the United Kingdom and its centre of gravity is the London Market — Lloyd's managing agents, syndicates and MGAs — where it ships pre-built connectors to the electronic placing platforms PPL and Whitespace and aligns with Lloyd's Blueprint Two. Send markets itself as an API-first platform, and it exchanges ACORD Standard placing, accounting and claims transactions through ACORD Solutions Group's ADEPT (ACORD Data Exchange Platform and Translator) via API, having joined ACORD as a member. Despite that posture, Send publishes NO public self-serve developer portal and NO downloadable OpenAPI: developer., developers., docs. and api.send.technology do not resolve in DNS, and /developers, /api, /developer and /integrations all return 404. The only integration surface is partner- and customer-gated, arranged through sales, implementation partners and the ACORD/placing-platform seam rather than through public documentation — a faithful example of the London Market's broker- and syndicate-facing modernization being invisible from the outside.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/send-technology/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/send-technology/refs/heads/main/apis.yml)
+**Areas:** Insurance · United Kingdom · Insurtech · Underwriting · London Market · Lloyd's of London · Specialty Insurance · Commercial Insurance · Reinsurance · Delegated Authority · MGA · Policy Administration
 
-## Tags
+## Send Technology on APIs.io
 
-- Insurance
-- United Kingdom
-- Insurtech
-- Underwriting
-- London Market
-- Lloyd's of London
-- Specialty Insurance
-- Commercial Insurance
-- Reinsurance
-- Delegated Authority
-- MGA
-- Policy Administration
-- ACORD
-- Partner Gated
+Everything profiled for Send Technology is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/send-technology/](https://apis.io/providers/send-technology/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-07-25
-- **Modified:** 2026-07-25
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (3)
 
-**None listed — no public API.**
+Authentication, trust centre, and vulnerability disclosure.
 
-Send markets itself as "an API-first platform with pre-built connectors for placing platforms like Whitespace and PPL, insurance-focused data integrations, rating engines, document stores, and policy admin systems," but it publishes no public developer portal, no API reference, and no downloadable API definition.
+- [Send Technology Domain Security](https://apis.io/security/send-technology/send-technology-domain-security/)
+- [Send Technology Trust Center](https://apis.io/security/send-technology/send-technology-trust-center/)
+- [Send Technology Vulnerability Disclosure](https://apis.io/security/send-technology/send-technology-vulnerability-disclosure/)
 
-Probed on 2026-07-25:
+## Where to find this API
 
-| Candidate | Result |
-| --- | --- |
-| `developer.send.technology` | DNS does not resolve |
-| `developers.send.technology` | DNS does not resolve |
-| `docs.send.technology` | DNS does not resolve |
-| `api.send.technology` | DNS does not resolve |
-| `send.technology/developers` | 404 |
-| `send.technology/developer` | 404 |
-| `send.technology/api` | 404 |
-| `send.technology/integrations` | 404 |
-| `send.technology/openapi.json`, `/swagger.json`, `/api-docs`, `/spec`, `/redoc`, `/v1/openapi.json` | 404 |
-| `send.technology/graphql` | 404 |
-| `send.technology/.well-known/openid-configuration` | 404 |
-| [send.technology/partners](https://send.technology/partners/) | 200 — marketing partner directory, not a developer portal |
-
-The full public page sitemap (43 pages) contains no developer-, docs- or API-facing page. There is no `github.com/send-technology` organization, no public Postman workspace, no GraphQL surface, no published `.proto`, and no webhook or AsyncAPI event catalog. Zero OpenAPI/Swagger definitions were harvested, and the `openapi/` directory is intentionally absent.
-
-The only integration surface is partner- and customer-gated: connectors are configured during a commercial implementation, and standards-based exchange runs through ACORD Solutions Group rather than through anything a developer can sign up for.
-
-## ACORD Posture
-
-**ACORD member; ACORD Standard placing/accounting/claims transactions exchanged via ACORD Solutions Group's ADEPT API; ACORD Forms ingestion for submission triage.**
-
-Send announced a strategic partnership with ACORD Solutions Group, the digital solutions subsidiary of ACORD, and uses ADEPT (ACORD Data Exchange Platform and Translator) via API so that Send customers can send and receive ACORD Standard accounting, claims and placing transactions — eMessaging aligned with Lloyd's Blueprint Two. Send is also an ACORD member and ingests ACORD Forms to classify and triage new submissions. No AL3 flat-file reference and no IVANS / Applied Epic / Vertafore AMS360 agency-download reference was found, which is consistent with a London Market rather than a US agency-management footprint.
-
-## Quote / Bind / Issue / FNOL
-
-All of quote, bind and issue are covered by the *product* — Quote & Rate Lifecycle Management, Send Rating, Send Studio, Binder Management, Post-Bind Processing — but none of them is exposed as a public API. FNOL is not a Send product area; claims appear only as ACORD claims transactions carried over ADEPT. The audience is partner-only: licensed underwriters, managing agents, MGAs and reinsurers.
-
-## Platform Modules
-
-- Submission Management (Send Flow)
-- Quote & Rate Lifecycle Management (Send Rating, Send Studio)
-- Risk Workflow
-- Automation & Rules
-- Activity Management
-- Binder Management
-- Bordereaux Ingestion
-- Entity Management
-- Post-Bind Processing
-- Data & Insights
-- Agentic Framework (managed, partner and custom agents over AWS Bedrock, Azure and OpenAI, under ISO 42001)
-
-## Links
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://send.technology/)
-- [About](https://send.technology/about/)
-- [Platform](https://send.technology/platform/)
-- [Partners](https://send.technology/partners/)
-- [London Market solution](https://send.technology/solutions/london-market/)
-- [Agentic Framework](https://send.technology/agentic-framework/)
 - [Blog](https://send.technology/resources/blog/)
-- [Blog RSS](https://send.technology/resources/blog/feed/)
-- [LinkedIn](https://www.linkedin.com/company/send-technology-solutions)
+- [Security](https://trustcenter.send.technology/?itemUid=64c9680b-ef79-4c92-baa0-13b541954bef)
+- [Compliance](https://trustcenter.send.technology/)
+- [Trust centre](https://trustcenter.send.technology/)
+- [Privacy policy](https://send.technology/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 18.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 26.3 |
+
+**Agent readiness 18.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 28.1** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/send-technology/](https://apis.io/providers/send-technology/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Send Technology: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/send-technology/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
